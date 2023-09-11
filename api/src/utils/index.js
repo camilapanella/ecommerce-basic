@@ -1,4 +1,3 @@
 module.exports = {
-    response: require("./response"),
-    catchedAsync: require("./catchedAsync")
-  };
+  response: require("./response"),
+};
