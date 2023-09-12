@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../actions/actions";
 import Loading from "../Loading/Loading";
 import Product from "../Product/Product";
-import { Typography, Container, Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 
 export default function Home() {
   const dispatch = useDispatch();

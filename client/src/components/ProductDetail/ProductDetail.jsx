@@ -36,11 +36,11 @@ export default function ProductDetail() {
               <Typography variant="h2">{details[0].name}</Typography>
               <hr />
               <CardMedia
-              component={"img"}
-              sx={{maxWidth: 700}}
-              image={details[0].image_url}
-              title={details[0].name}
-            />
+                component={"img"}
+                sx={{ maxWidth: 700 }}
+                image={details[0].image_url}
+                title={details[0].name}
+              />
               <Typography variant="h5">
                 Description: {details[0].description}
               </Typography>

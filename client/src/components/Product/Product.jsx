@@ -23,11 +23,11 @@ export default function Product({ id, name, image_url, price }) {
     <Card
       sx={{
         maxWidth: 280,
-        margin: "0 auto",
         padding: "0.1em",
         display: "flex",
         flexDirection: "column",
         bgcolor: "#d6ffa6",
+        height: "100%",
       }}
     >
       <Button size="small" onClick={(e) => handleDelete(e)}>
@@ -40,7 +40,7 @@ export default function Product({ id, name, image_url, price }) {
         image={image_url}
         alt={name}
       />
-      <CardContent >
+      <CardContent>
         <Typography gutterBottom variant="h4" component="h2">
           {name}
         </Typography>
