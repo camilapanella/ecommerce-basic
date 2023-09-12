@@ -26,21 +26,21 @@ export default function ProductDetail() {
 
   if (details.length) {
     return (
-      <Container sx={{ py: 8 }} maxWidth="md">
+      <Container maxWidth="md">
         <Grid container alignItems="center" justify="center" direction="column">
           <Link to="/">
             <Button>Back</Button>
           </Link>
-          <Card sx={{ maxWidth: 1000 }}>
-            <CardMedia
-              component={"img"}
-              sx={{}}
-              image={details[0].image_url}
-              title={details[0].name}
-            />
+          <Card sx={{ maxWidth: 800, bgcolor: "#d6ffa6" }}>
             <CardContent>
               <Typography variant="h2">{details[0].name}</Typography>
               <hr />
+              <CardMedia
+              component={"img"}
+              sx={{maxWidth: 700}}
+              image={details[0].image_url}
+              title={details[0].name}
+            />
               <Typography variant="h5">
                 Description: {details[0].description}
               </Typography>
@@ -51,7 +51,7 @@ export default function ProductDetail() {
               </Typography>
               <CardMedia
                 component="img"
-                sx={{ width: 160, display: { xs: "none", sm: "block" } }}
+                sx={{ width: 100 }}
                 image={details[0].brand.logo_url}
                 alt=""
               />

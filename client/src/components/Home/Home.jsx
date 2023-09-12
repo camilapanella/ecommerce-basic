@@ -15,7 +15,6 @@ export default function Home() {
   if (products) {
     return (
       <div>
-        <Typography variant="h2">Products</Typography>
         <Container sx={{ py: 8 }} maxWidth="md">
           <Grid container spacing={4} justifyContent={"center"}>
             {products

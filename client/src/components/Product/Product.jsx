@@ -14,19 +14,33 @@ export default function Product({ id, name, image_url, price }) {
   function handleDelete() {
     if (window.confirm("Are you sure you want to delete this product?")) {
       dispatch(deleteProduct(id));
-      document.location.reload();
+      setTimeout(() => {
+        window.location.reload();
+      }, 500);
     }
   }
   return (
-    <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
-      <Button size="small" onClick={(e) => handleDelete(e)}>Delete</Button>
+    <Card
+      sx={{
+        maxWidth: 280,
+        margin: "0 auto",
+        padding: "0.1em",
+        display: "flex",
+        flexDirection: "column",
+        bgcolor: "#d6ffa6",
+      }}
+    >
+      <Button size="small" onClick={(e) => handleDelete(e)}>
+        Delete
+      </Button>
       <CardMedia
         component="img"
-        sx={{ pt: "10%" }}
+        height="250"
+        sx={{ objectFit: "contain" }}
         image={image_url}
         alt={name}
       />
-      <CardContent sx={{ flexGrow: 1 }}>
+      <CardContent >
         <Typography gutterBottom variant="h4" component="h2">
           {name}
         </Typography>

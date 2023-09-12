@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { postProduct, getBrands } from "../../actions/actions";
 import { Toaster, toast } from "react-hot-toast";
 import Container from "@mui/material/Container";
@@ -21,6 +22,7 @@ export default function Form(props) {
   const dispatch = useDispatch();
   const brands = useSelector((state) => state.brands);
   const products = useSelector((state) => state.products);
+  const navigate = useNavigate();
 
   const [input, setInput] = useState({
     name: "",
@@ -46,6 +48,9 @@ export default function Form(props) {
       brandId: "",
       price: "",
     });
+    setTimeout(() => {
+      navigate("/");
+    }, 1000);
   }
 
   function handleSelect(e) {
