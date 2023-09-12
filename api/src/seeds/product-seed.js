@@ -1,56 +1,56 @@
 const types = [
   {
-    name: "Air Force",
+    name: "JBL Go Essential",
     description:
       "Soundcore, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
     price: 200,
     image_url:
-      "https://m.media-amazon.com/images/I/81uiWMk9dnL._AC_UL1500_.jpg",
+      "https://http2.mlstatic.com/D_NQ_NP_912142-MLA51457763140_092022-O.webp",
     brandId: 1,
   },
   {
-    name: "Superstar",
+    name: "Apple Macbook Pro 14",
     description:
       "Soundcore, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
     price: 150,
     image_url:
-      "https://assets.adidas.com/images/w_600,f_auto,q_auto/7ed0855435194229a525aad6009a0497_9366/Zapatillas_Superstar_Blanco_EG4958_01_standard.jpg",
+      "https://static.nb.com.ar/i/nb_APPLE-MACBOOK-PRO-14-M1-PRO-CHIP-16GB-512GB-SSD-SILVER_ver_a1f627781115284cebfa693795adc22b.jpeg",
     brandId: 2,
   },
   {
-    name: "Old Skool",
+    name: "Mouse Bluetooth POP",
     description:
       "Soundcore, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
     price: 200,
     image_url:
-      "https://http2.mlstatic.com/D_NQ_NP_855004-MLA47131956094_082021-O.jpg",
+      "https://logg.api.cygnus.market/static/logg/Global/Mouse%20Bluetooth%20Logitech%20POP%20Heartbreaker%20Bot%C3%B3n%20de%20Emojis%20comp.%20Logi%20Bolt%20Rosa/Rojo/8a9edb0b546942a38e4d585aae44ee25.webp",
     brandId: 3,
   },
   {
-    name: "Mayze",
+    name: "Galaxy A23",
     description:
       "Soundcore, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
     price: 200,
     image_url:
-      "https://woker.vtexassets.com/arquivos/ids/275054/1008265-001-2.jpg?v=637864855208730000",
+      "https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a235mlbearo/gallery/ar-galaxy-a23-sm-a235-sm-a235mlbearo-532206854?$650_519_PNG$",
     brandId: 4,
   },
   {
-    name: "9060",
+    name: "Moto G13 SE",
     description:
       "Soundcore, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
     price: 200,
     image_url:
-      "https://media.revistagq.com/photos/63e9ff57df9a2fddd35517c7/master/pass/new-balance-9060-white-black.jpg",
+      "https://armoto.vtexassets.com/arquivos/ids/164176-800-auto?v=638180621631900000&width=800&height=auto&aspect=true",
     brandId: 5,
   },
   {
-    name: "Disruptor",
+    name: "Huawei Nova 9",
     description:
       "Soundcore, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
     price: 200,
     image_url:
-      "https://s3.sa-east-1.amazonaws.com/www.vaypol.com.ar/variants/fzmets7ps9u2qbpcj1namv8ckme7/c77c2a06864ac9aca38dc5bd9371de015471edcdbf322dfb14411689bf968ae5",
+      "https://ar.celulares.com/fotos/huawei-nova-9-93637-g-alt.jpg",
     brandId: 6,
   },
 ];

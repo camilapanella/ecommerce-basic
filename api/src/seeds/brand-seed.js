@@ -3,34 +3,34 @@ const { Brand } = require("../db");
 const addBrands = async () => {
   const types = [
     {
-      name: "Nike",
+      name: "JBL",
       logo_url:
-        "https://w7.pngwing.com/pngs/224/696/png-transparent-nike-logo-movement-brands-black.png",
+        "https://logodownload.org/wp-content/uploads/2016/10/jbl-logo-6-1.png",
     },
     {
-      name: "Adidas",
+      name: "Apple",
       logo_url:
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg",
+        "https://w7.pngwing.com/pngs/566/77/png-transparent-apple-logo-apple-watch-logo-apple-logo-heart-logo-computer-wallpaper.png",
     },
     {
-      name: "Vans",
+      name: "Logitech",
       logo_url:
-        "https://www.creativosonline.org/wp-content/uploads/2022/02/Logo-VANS.png",
+        "https://w7.pngwing.com/pngs/11/407/png-transparent-logitech-logo-icon.png",
     },
     {
-      name: "Puma",
+      name: "Samsung",
       logo_url:
-        "https://st.depositphotos.com/38540216/59631/v/450/depositphotos_596311672-stock-illustration-puma-logo-black-symbol-with.jpg",
+        "https://1000marcas.net/wp-content/uploads/2019/12/logo-Samsung.png",
     },
     {
-      name: "New Balance",
+      name: "Motorola",
       logo_url:
-        "https://e7.pngegg.com/pngimages/256/226/png-clipart-logo-new-balance-brand-shoe-trademark-new-balance-logo.png",
+        "https://1000marcas.net/wp-content/uploads/2020/01/Motorola-Logo-.png",
     },
     {
-      name: "Fila",
+      name: "Huawey",
       logo_url:
-        "https://1000marcas.net/wp-content/uploads/2019/12/logo-Fila.png",
+        "https://style.shockvisual.net/wp-content/uploads/2019/09/huawei-logo.jpg",
     },
   ];
 
