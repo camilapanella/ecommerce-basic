@@ -7,6 +7,12 @@ const { DB_URL } = process.env;
 const sequelize = new Sequelize(DB_URL, {
   logging: false,
   native: false,
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
+  },
 });
 
 const basename = path.basename(__filename);
