@@ -4,6 +4,7 @@ import {
   GET_BRANDS,
   CLEAR_DETAIL,
   POST_PRODUCT,
+  POST_BRAND,
   GET_BY_NAME,
 } from "../actions/actions";
 
@@ -50,6 +51,10 @@ export const rootReducer = (state = initialState, action) => {
         brands: action.payload,
       };
     case POST_PRODUCT:
+      return {
+        ...state,
+      };
+    case POST_BRAND:
       return {
         ...state,
       };

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { postProduct, getBrands } from "../../actions/actions";
 import { Toaster, toast } from "react-hot-toast";
 import Container from "@mui/material/Container";
@@ -31,6 +31,7 @@ export default function Form(props) {
     brandId: "",
     price: "",
   });
+
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
@@ -98,6 +99,7 @@ export default function Form(props) {
           <hr />
           <TextField
             type="text"
+            color='secondary'
             value={input.name}
             name="name"
             placeholder="Add name..."
@@ -110,6 +112,7 @@ export default function Form(props) {
 
           <TextField
             type="text"
+            color='secondary'
             value={input.description}
             name="description"
             placeholder="Description of your product..."
@@ -120,6 +123,7 @@ export default function Form(props) {
           <hr />
           <TextField
             type="number"
+            color='secondary'
             value={input.price}
             name="price"
             placeholder="Price..."
@@ -130,40 +134,54 @@ export default function Form(props) {
           <hr />
           <TextField
             type="text"
+            color='secondary'
             value={input.image_url}
             name="image_url"
             placeholder="Image url"
             onChange={(e) => handleChange(e)}
           />
           <hr />
+          <Link to="/brand">
+            <Typography variant="button" color='secondary'>Add new brand</Typography>
+          </Link>
           <hr />
           <InputLabel id="demo-simple-select-label">Select brand</InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
+            color='secondary'
             value={input.brandId}
             sx={{
-              width: 210,
+              width: 220,
               height: 50,
             }}
             label="Brand"
             onChange={(e) => handleSelect(e)}
           >
-            {brands?.map((brand) => (
-              <MenuItem key={brand.name} value={brand.id}>
-                {brand.name}
-              </MenuItem>
-            ))}
+            {brands.length ? (
+              brands.map((brand) => (
+                <MenuItem key={brand.name} value={brand.id}>
+                  {brand.name}
+                </MenuItem>
+              ))
+            ) : (
+              <MenuItem disabled>There are no brands yet</MenuItem>
+            )}
           </Select>
+          {errors.brandId && <Typography>{errors.brandId}</Typography>}
           <hr />
           <div>
             {input.brandId ? (
-              <Button onClick={() => handleDelete()}>Reset brand</Button>
+              <Button color='secondary' onClick={() => handleDelete()}>Reset brand</Button>
             ) : null}
           </div>
           <hr />
           {!Object.keys(errors).length ? (
-            <Button disabled={!input.name || !input.description} type="submit">
+            <Button
+              disabled={!input.name || !input.description || !input.brandId}
+              type="submit"
+              color='secondary'
+            >
               Submit
             </Button>
           ) : null}

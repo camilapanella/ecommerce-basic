@@ -6,6 +6,7 @@ export const GET_BY_NAME = "GET_BY_NAME"
 export const CLEAR_DETAIL = "CLEAR_DETAIL";
 export const POST_PRODUCT = 'POST_PRODUCT'
 export const GET_BRANDS = "GET_BRANDS";
+export const POST_BRAND = 'POST_BRAND'
 
 export function getProducts() {
   return async function (dispatch) {
@@ -62,5 +63,11 @@ export function getBrands() {
       type: GET_BRANDS,
       payload: json.data,
     });
+  };
+}
+export function postBrand(payload) {
+  return async function (dispatch) {
+    var json = await axios.post(`/brands`, payload);
+    return json;
   };
 }
