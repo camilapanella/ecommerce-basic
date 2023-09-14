@@ -10,7 +10,7 @@
 -Backend - Render
 <br />
 -Frontend - Vercel
-https://basic-ecommerce-iota.vercel.app/
+https://ecommerce-basic-murex.vercel.app/
 
 <h1>Backend</h1>
 Para levantarlo localmente, inclui un ejemplo de .env en la cual insertar las variables de entorno indicadas.
