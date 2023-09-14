@@ -21,7 +21,7 @@ module.exports = (sequelize) => {
         type: DataTypes.FLOAT,
       },
       image_url: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
       },
     },
     { timestamps: false }
